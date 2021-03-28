@@ -28,6 +28,5 @@ output_meta=$(ipfs add meta.json)
 meta_uri=ipfs://$(echo $output_meta | grep -oE  "Qm[1-9A-HJ-NP-Za-km-z]{44}")
 echo "NFT Meta URI: "$meta_uri
 
-meta=$(cat meta.json)
-iris tx nft issue $file_hash_lower --from=$key_name --name=$file_hash_lower --schema=$meta --chain-id=$chain_id
+iris tx nft issue $file_hash_lower --from=$key_name --name=$file_hash_lower --schema=meta.json --chain-id=$chain_id
 iris tx nft mint $file_hash_lower $file_hash_lower --uri=$meta_uri --recipient=$owner --from=$key_name --chain-id=$chain_id

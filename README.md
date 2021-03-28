@@ -72,7 +72,7 @@ Mint file based NFTs using IRISnet and IPFS
  7) Mint NFT from an image file using IRISnet and IPFS
  
     ```
-    ./nft.sh --name test --description test desc --owner iaa15spgl8g6v04s8paes26vyrt9gqy2hn8l40npqs --file image.png --chain_id testing --key_name MyKey
+    ./nft.sh --name test --description "test desc" --owner iaa15spgl8g6v04s8paes26vyrt9gqy2hn8l40npqs --file image.png --chain_id testing --key_name MyKey
     ```
     
     Replace iaa15spgl8g6v04s8paes26vyrt9gqy2hn8l40npqs with the address to which the NFT must be sent
