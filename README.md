@@ -64,6 +64,8 @@ Mint file based NFTs using IRISnet and IPFS
    
 6) Start IPFS container
 
+   Install IPFS CLI - https://docs.ipfs.io/install/command-line/
+
    ```
    docker-compose up -d ipfs
    ipfs init
